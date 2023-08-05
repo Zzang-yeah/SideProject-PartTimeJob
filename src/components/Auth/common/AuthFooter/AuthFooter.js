@@ -1,9 +1,9 @@
 import React from "react";
-import { Footer } from "../../style/style";
+import { Footer } from "./style";
 
 
-const AuthFooter = ()=>{
-    return(
+const AuthFooter = () => {
+    return (
         <Footer>
             <div>
                 <span>ⓒ JOBKOREA LLC. All Rights Reserved.</span>

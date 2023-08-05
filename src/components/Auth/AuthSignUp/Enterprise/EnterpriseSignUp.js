@@ -1,30 +1,31 @@
 import React from "react";
-import { CheckBoxWrap, AgreementText, AuthWrapper,  InfoCard, InfoContainer, Title } from "../../style/style";
-import AuthFooter from "../../components/common/AuthFooter";
-import AuthForm from "../../components/common/AuthForm";
-import Agreement from "../../components/common/Agreement";
+import { AuthWrapper, InfoContainer } from "../../common/commonStyle";
+import Agreement from "../../common/Agreement/Agreement";
+import AuthForm from "../../common/AuthForm/AuthForm";
+import { Title } from "../../common/commonStyle";
+import AuthFooter from "../../common/AuthFooter/AuthFooter";
 
 
-const EnterpriseSignup = ()=>{
-    
-    return(
+
+const EnterpriseSignup = () => {
+
+    return (
         <>
-        <AuthWrapper>
-            <InfoContainer>
-               <Title>개인 회원가입</Title>
-               <InfoCard>
-                    <AgreementText>약관동의</AgreementText>
+            <AuthWrapper>
+                <InfoContainer>
+                    <Title>개인 회원가입</Title>
+
                     {/* 약관동의 */}
-                    <Agreement/>
+                    <Agreement />
 
                     {/* 회원정보 입력 컴포넌트 */}
-                    <AuthForm/>
-               </InfoCard>
-            </InfoContainer>
-        </AuthWrapper>
-        <AuthFooter/>
+                    <AuthForm />
+
+                </InfoContainer>
+            </AuthWrapper>
+            <AuthFooter />
         </>
-        
+
     )
 }
 

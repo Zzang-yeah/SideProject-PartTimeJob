@@ -1,9 +1,10 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import { AuthHeader, LogoImg, Title, TitleContainer } from "../../style/style";
+import { AuthHeader, LogoImg, TitleContainer } from "./style";
+import { Title } from "../commonStyle";
 
-const AuthLayOut = ()=>{
-    return(
+const AuthLayOut = () => {
+    return (
         <>
             <AuthHeader>
                 <div className="container">
@@ -13,7 +14,7 @@ const AuthLayOut = ()=>{
                     </TitleContainer>
                 </div>
             </AuthHeader>
-            <Outlet/>
+            <Outlet />
         </>
     )
 }
