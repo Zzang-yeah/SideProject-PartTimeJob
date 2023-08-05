@@ -1,0 +1,35 @@
+// 설치 한 라이브러리 및 패키지
+
+1.  React router 설치
+
+- 리액트SPA에서 페이지를 이동시킬 수 있는 라이브러리
+- npm install react-router-dom
+- router ->router.js에서 router들만 따로 관리함.
+- App.js에서 RotuerProvider로 router.js 을 import함.
+
+2.  스타일링 도구 설치
+
+- CSS in JS 라이브러리인 Styled-component
+- npm install styled-component
+
+3.  React Hook
+
+- form을 데이터들을 간단하게 관리할 수 있는 라이브러리
+- npm install react-hook-form
+
+4. React CSS reset
+
+- 기본 css stlye을 없애준다. react css reset 라이브러리 설치
+- npm install styled-reset
+- App.js에서 reset을 import해서 모든 component에 적용 시켜줌.
+
+// 컴포넌트 관리
+
+회원가입, 로그인 컴포넌트 관리
+
+1.  Auth폴더안에서 component , common 관리
+2.  common에선 공통으로 들어가는 component들 따로 관리
+
+LayOut
+
+1.  LayOut은 Header component 관리

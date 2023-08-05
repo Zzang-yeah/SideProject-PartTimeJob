@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { Fragment } from "react";
+import { RouterProvider } from "react-router-dom";
+import { router } from "./router/router";
+import { createGlobalStyle } from 'styled-components'
+import reset from 'styled-reset';
+import { ThemeProvider } from 'styled-components';
+import { theme } from "./components/theme/theme";
+
+
+const GlobalStyle = createGlobalStyle`
+  ${reset}
+  /* other styles */
+`
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <GlobalStyle/>
+      <ThemeProvider theme={theme}>
+        <RouterProvider router={router}/>
+      </ThemeProvider>
+    </Fragment>
   );
 }
 
