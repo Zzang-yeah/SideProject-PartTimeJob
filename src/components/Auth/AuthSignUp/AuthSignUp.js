@@ -10,6 +10,7 @@ import AuthFooter from "../components/common/AuthFooter";
 
 const AuthSignUp = ()=>{
     return(
+        <>
         <AuthWrapper>
            <SignUpContainer>
                 <JoinTitle>알바몬·잡코리아 통합 회원가입을 환영합니다.</JoinTitle>
@@ -22,7 +23,7 @@ const AuthSignUp = ()=>{
                                 alt='일반 회원가입 이미지'
                             />
                             <JoinButton color='white' bgColor='#ff501b'>
-                                <Link to='/member/signup'>개인 회원가입</Link>
+                                <Link to='/auth/signup-enterprise'>개인 회원가입</Link>
                             </JoinButton>
                         </div>
                     </JoginCard>
@@ -30,10 +31,10 @@ const AuthSignUp = ()=>{
                             <SubTitle>공고를 등록하고 인재를 찾아보세요.</SubTitle>
                             <div className='join-column'>
                                 <img 
-                                    src="https://contents.albamon.kr/monimg/msa/images/account/join_corp.svg"                                    alt='일반 회원가입 이미지'
+                                    src="https://contents.albamon.kr/monimg/msa/images/account/join_corp.svg" alt='일반 회원가입 이미지'
                                 />
                                 <JoinButton color='white' bgColor='#171717'>
-                                    <Link to='/member/signup'>기업 회원가입</Link>
+                                    <Link to='/auth/signup-enterprise'>개인 회원가입</Link>
                                 </JoinButton>
                             </div>
                     </JoginCard>
@@ -49,9 +50,9 @@ const AuthSignUp = ()=>{
                 </IntegratedLogin>
                 
            </SignUpContainer>
-            <AuthFooter/>
-
         </AuthWrapper>
+        <AuthFooter/>
+        </>
     )
 }
 export default AuthSignUp;
