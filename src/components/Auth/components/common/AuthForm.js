@@ -7,7 +7,7 @@ const AuthForm = ()=>{
     const onSubmit = async(data)=>{
         console.log(data)
         try{
-            const response = await fetch('https://5335-118-32-224-80.ngrok-free.app/members',{
+            const response = await fetch(process.env.RACT_APP_API_MEMBER,{
                 method:"POST",
                 headers:{  // Modify here
                     'Content-Type':"application/json",
