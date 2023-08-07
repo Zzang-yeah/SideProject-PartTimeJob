@@ -20,7 +20,7 @@ const AuthSignUp = () => {
                                     alt='일반 회원가입 이미지'
                                 />
                                 <JoinButton color='white' bgColor='#ff501b'>
-                                    <Link to='/auth/signup-enterprise'>개인 회원가입</Link>
+                                    <Link to='/auth/signup-individual'>개인 회원가입</Link>
                                 </JoinButton>
                             </div>
                         </JoinCard>
@@ -31,7 +31,7 @@ const AuthSignUp = () => {
                                     src="https://contents.albamon.kr/monimg/msa/images/account/join_corp.svg" alt='일반 회원가입 이미지'
                                 />
                                 <JoinButton color='white' bgColor='#171717'>
-                                    <Link to='/auth/signup-enterprise'>개인 회원가입</Link>
+                                    <Link to='/auth/signup-enterprise'>기업 회원가입</Link>
                                 </JoinButton>
                             </div>
                         </JoinCard>
